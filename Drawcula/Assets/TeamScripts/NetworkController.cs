@@ -21,6 +21,6 @@ public class NetworkController : MonoBehaviour {
 
 	//After connecting to room in lobby, instantiate the player
 	void OnJoinedRoom() {
-		//PhotonNetwork.Instantiate ("BGPlayerController", Vector3.zero, Quaternion.identity, 0);
+		PhotonNetwork.Instantiate ("NetworkedPlayer", Vector3.zero, Quaternion.identity, 0);
 	}
 }
