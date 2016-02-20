@@ -13,13 +13,16 @@ public class NetworkedPlayer : Photon.MonoBehaviour {
 		//only if we're the player
 		if(photonView.isMine)
 		{
-			playerGlobal = GameObject.Find("MainPlayerMan").transform;
-			playerLocal = playerGlobal.Find ("Camera");
+			playerGlobal = GameObject.Find("FPSController").transform;
+			playerLocal = playerGlobal.Find ("FirstPersonCharacter");
 
 			//associate camera with avatar
 			this.transform.SetParent(playerLocal);
 
 			this.transform.localPosition = Vector3.zero;	//center the cube on the camera
+
+			//hide the avatar from ourselves (uncomment to toggle this)
+			//avatar.SetActive(false);
 		}
 	}
 
