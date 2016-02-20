@@ -2,24 +2,31 @@
 -target:library
 -nowarn:0169
 -out:'Temp/Assembly-CSharp-Editor.dll'
--r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll'
--r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll'
+-r:'/Applications/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll'
+-r:'/Applications/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll'
 -r:'Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll'
 -r:'Library/ScriptAssemblies/Assembly-CSharp.dll'
--r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll'
--r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll'
--r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll'
--r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll'
--r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll'
--r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll'
--r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll'
--r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll'
--r:'Assets/Plugins/LeapCSharp.NET3.5.dll'
--r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll'
--r:'/Applications/Unity/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll'
+-r:'/Applications/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll'
+-r:'/Applications/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll'
+-r:'/Applications/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll'
+-r:'/Applications/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll'
+-r:'/Applications/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll'
+-r:'/Applications/Unity.app/Contents/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll'
+-r:'/Applications/Unity.app/Contents/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll'
+-r:'/Applications/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll'
 -r:'Assets/Photon Unity Networking/Editor/PhotonNetwork/Newtonsoft.Json.dll'
--r:'Assets/Plugins/WebSocket/websocket-sharp.dll'
+-r:'Assets/Plugins/LeapCSharp.NET3.5.dll'
 -r:'Assets/Plugins/Photon3Unity3D.dll'
+-r:'Assets/Plugins/WebSocket/websocket-sharp.dll'
+-r:'/Applications/Unity.app/Contents/Frameworks/Managed/UnityEditor.Graphs.dll'
+-r:'/Applications/Unity.app/Contents/UnityExtensions/Unity/EditorTestsRunner/Editor/UnityEditor.EditorTestsRunner.dll'
+-r:'/Applications/Unity.app/Contents/UnityExtensions/Unity/Networking/Editor/UnityEditor.Networking.dll'
+-r:'/Applications/Unity.app/Contents/UnityExtensions/Unity/EditorTestsRunner/Editor/nunit.framework.dll'
+-r:'/Applications/Unity.app/Contents/UnityExtensions/Unity/GUISystem/Editor/UnityEditor.UI.dll'
+-r:'/Applications/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll'
+-r:'/Applications/Unity.app/Contents/UnityExtensions/Unity/Advertisements/Editor/UnityEditor.Advertisements.dll'
+-r:'/Applications/Unity.app/Contents/UnityExtensions/Unity/TreeEditor/Editor/UnityEditor.TreeEditor.dll'
+-r:'/Applications/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll'
 -define:UNITY_5_3_2
 -define:UNITY_5_3
 -define:UNITY_5
@@ -46,7 +53,6 @@
 -define:ENABLE_RAKNET
 -define:ENABLE_UNET
 -define:ENABLE_UNITYEVENTS
--define:ENABLE_VR
 -define:ENABLE_WEBCAM
 -define:ENABLE_WWW
 -define:ENABLE_CLOUD_SERVICES
@@ -69,19 +75,14 @@
 -define:ENABLE_LOCALIZATION
 -define:ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION
 -define:ENABLE_EDITOR_TESTS_RUNNER
--define:UNITY_STANDALONE_OSX
--define:UNITY_STANDALONE
+-define:UNITY_WEBPLAYER
 -define:ENABLE_SUBSTANCE
--define:ENABLE_GAMECENTER
+-define:WEBPLUG
 -define:ENABLE_TEXTUREID_MAP
 -define:ENABLE_RUNTIME_GI
 -define:ENABLE_MOVIES
 -define:ENABLE_NETWORK
 -define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
--define:ENABLE_LOG_MIXED_STACKTRACE
--define:ENABLE_UNITYWEBREQUEST
--define:ENABLE_CLUSTERINPUT
--define:ENABLE_WEBSOCKET_HOST
 -define:ENABLE_MONO
 -define:ENABLE_PROFILER
 -define:DEBUG
@@ -111,5 +112,5 @@
 'Assets/Photon Unity Networking/Editor/PhotonNetwork/Views/PhotonRigidbody2DViewEditor.cs'
 'Assets/Photon Unity Networking/Editor/PhotonNetwork/Views/PhotonRigidbodyViewEditor.cs'
 'Assets/Photon Unity Networking/Editor/PhotonNetwork/Views/PhotonTransformViewEditor.cs'
--r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/2.0/System.Runtime.Serialization.dll'
--r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/2.0/System.Xml.Linq.dll'
+-r:'/Applications/Unity.app/Contents/Frameworks/Mono/lib/mono/2.0/System.Runtime.Serialization.dll'
+-r:'/Applications/Unity.app/Contents/Frameworks/Mono/lib/mono/2.0/System.Xml.Linq.dll'

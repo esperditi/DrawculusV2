@@ -2,14 +2,16 @@
 -target:library
 -nowarn:0169
 -out:'Temp/Assembly-CSharp.dll'
--r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll'
+-r:'/Applications/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll'
 -r:'Library/ScriptAssemblies/Assembly-CSharp-firstpass.dll'
--r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll'
--r:'/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll'
+-r:'/Applications/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll'
+-r:'/Applications/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll'
 -r:'Assets/Plugins/LeapCSharp.NET3.5.dll'
--r:'Assets/Plugins/WebSocket/websocket-sharp.dll'
 -r:'Assets/Plugins/Photon3Unity3D.dll'
--r:'/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll'
+-r:'Assets/Plugins/WebSocket/websocket-sharp.dll'
+-r:'/Applications/Unity.app/Contents/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll'
+-r:'/Applications/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll'
+-r:'/Applications/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll'
 -define:UNITY_5_3_2
 -define:UNITY_5_3
 -define:UNITY_5
@@ -36,7 +38,6 @@
 -define:ENABLE_RAKNET
 -define:ENABLE_UNET
 -define:ENABLE_UNITYEVENTS
--define:ENABLE_VR
 -define:ENABLE_WEBCAM
 -define:ENABLE_WWW
 -define:ENABLE_CLOUD_SERVICES
@@ -59,19 +60,14 @@
 -define:ENABLE_LOCALIZATION
 -define:ENABLE_ANDROID_ATLAS_ETC1_COMPRESSION
 -define:ENABLE_EDITOR_TESTS_RUNNER
--define:UNITY_STANDALONE_OSX
--define:UNITY_STANDALONE
+-define:UNITY_WEBPLAYER
 -define:ENABLE_SUBSTANCE
--define:ENABLE_GAMECENTER
+-define:WEBPLUG
 -define:ENABLE_TEXTUREID_MAP
 -define:ENABLE_RUNTIME_GI
 -define:ENABLE_MOVIES
 -define:ENABLE_NETWORK
 -define:ENABLE_CRUNCH_TEXTURE_COMPRESSION
--define:ENABLE_LOG_MIXED_STACKTRACE
--define:ENABLE_UNITYWEBREQUEST
--define:ENABLE_CLUSTERINPUT
--define:ENABLE_WEBSOCKET_HOST
 -define:ENABLE_MONO
 -define:ENABLE_PROFILER
 -define:DEBUG
@@ -291,5 +287,3 @@
 'Assets/Photon Unity Networking/UtilityScripts/SmoothSyncMovement.cs'
 'Assets/Photon Unity Networking/UtilityScripts/SupportLogger.cs'
 'Assets/Photon Unity Networking/UtilityScripts/TimeKeeper.cs'
--r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Runtime.Serialization.dll'
--r:'/Applications/Unity/Unity.app/Contents/Frameworks/Mono/lib/mono/unity/System.Xml.Linq.dll'
