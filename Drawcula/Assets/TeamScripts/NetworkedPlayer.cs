@@ -18,6 +18,8 @@ public class NetworkedPlayer : Photon.MonoBehaviour {
 
 			//associate camera with avatar
 			this.transform.SetParent(playerLocal);
+
+			this.transform.localPosition = Vector3.zero;	//center the cube on the camera
 		}
 	}
 
